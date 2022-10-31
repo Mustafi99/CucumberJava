@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="26.986024">
+<testcase classname="Bookcart Application tests" name="Login should be success" time="7.512957">
+<system-out><![CDATA[Given User navigate to the Bookcart application.............................passed
+And user clicks on the login button.........................................passed
+And User enter the username as ortoni.......................................passed
+And User enter the password as pass1234.....................................passed
+When User click on the login button.........................................passed
+Then login should be success................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Bookcart Application tests" name="Login should be Failed" time="5.071159">
+<failure message="java.lang.AssertionError: expected [Username or Password is incorrect.1] but found [Username or Password is incorrect.]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:99)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:1037)&#13;&#10;&#9;at org.testng.Assert.assertEqualsImpl(Assert.java:140)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:122)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:629)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:639)&#13;&#10;&#9;at stepdefinations.steps.loginShouldBeFailed(steps.java:66)&#13;&#10;&#9;at ✽.login should be Failed(src\test\java\features\login.feature:21)&#13;&#10;"><![CDATA[Given User navigate to the Bookcart application.............................passed
+And user clicks on the login button.........................................passed
+And User enter the "ortoni" as username.....................................passed
+And User enter the "pass123456" as password.................................passed
+When User click on the login button.........................................passed
+But login should be Failed..................................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [Username or Password is incorrect.1] but found [Username or Password is incorrect.]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at stepdefinations.steps.loginShouldBeFailed(steps.java:66)
+	at ✽.login should be Failed(src\test\java\features\login.feature:21)
+]]></failure>
+</testcase>
+<testcase classname="Bookcart Application tests" name="Login should be Failed 2" time="4.842433">
+<failure message="java.lang.AssertionError: expected [Username or Password is incorrect.1] but found [Username or Password is incorrect.]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:99)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:1037)&#13;&#10;&#9;at org.testng.Assert.assertEqualsImpl(Assert.java:140)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:122)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:629)&#13;&#10;&#9;at org.testng.Assert.assertEquals(Assert.java:639)&#13;&#10;&#9;at stepdefinations.steps.loginShouldBeFailed(steps.java:66)&#13;&#10;&#9;at ✽.login should be Failed(src\test\java\features\login.feature:21)&#13;&#10;"><![CDATA[Given User navigate to the Bookcart application.............................passed
+And user clicks on the login button.........................................passed
+And User enter the "ortoni" as username.....................................passed
+And User enter the "pass123456" as password.................................passed
+When User click on the login button.........................................passed
+But login should be Failed..................................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [Username or Password is incorrect.1] but found [Username or Password is incorrect.]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at stepdefinations.steps.loginShouldBeFailed(steps.java:66)
+	at ✽.login should be Failed(src\test\java\features\login.feature:21)
+]]></failure>
+</testcase>
+<testcase classname="Bookcart Application tests" name="Login should be success" time="4.917386">
+<system-out><![CDATA[Given User navigate to the Bookcart application.............................passed
+And user clicks on the login button.........................................passed
+And User enter the "ortoni" as username.....................................passed
+And User enter the "pass1234" as password...................................passed
+When User click on the login button.........................................passed
+Then login should be success................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Bookcart Application tests" name="Login should be success 2" time="4.642089">
+<system-out><![CDATA[Given User navigate to the Bookcart application.............................passed
+And user clicks on the login button.........................................passed
+And User enter the "mustafi011994" as username..............................passed
+And User enter the "Uvwx0101" as password...................................passed
+When User click on the login button.........................................passed
+Then login should be success................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

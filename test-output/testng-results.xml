@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="5" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="27470" started-at="2022-10-19T10:17:41 IST" finished-at="2022-10-19T10:18:09 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.Runner@2a556333]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="27470" started-at="2022-10-19T10:17:41 IST" finished-at="2022-10-19T10:18:09 IST">
+      <class name="testRunner.Runner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunner.Runner@2a556333]" name="setUpClass" is-config="true" duration-ms="120" started-at="2022-10-19T10:17:41 IST" finished-at="2022-10-19T10:17:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.Runner@2a556333]" name="runScenario" duration-ms="7675" started-at="2022-10-19T10:17:41 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-19T10:17:49 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login should be success"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Bookcart Application tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.Runner@2a556333]" name="runScenario" duration-ms="5073" started-at="2022-10-19T10:17:49 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-19T10:17:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login should be Failed"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Bookcart Application tests"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Username or Password is incorrect.1] but found [Username or Password is incorrect.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Username or Password is incorrect.1] but found [Username or Password is incorrect.]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at stepdefinations.steps.loginShouldBeFailed(steps.java:66)
+at ✽.login should be Failed(src\test\java\features\login.feature:21)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.Runner@2a556333]" name="runScenario" duration-ms="4844" started-at="2022-10-19T10:17:54 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-19T10:17:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login should be Failed"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Bookcart Application tests"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Username or Password is incorrect.1] but found [Username or Password is incorrect.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Username or Password is incorrect.1] but found [Username or Password is incorrect.]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at stepdefinations.steps.loginShouldBeFailed(steps.java:66)
+at ✽.login should be Failed(src\test\java\features\login.feature:21)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.Runner@2a556333]" name="runScenario" duration-ms="4918" started-at="2022-10-19T10:17:59 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-19T10:18:04 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login should be success"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Bookcart Application tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunner.Runner@2a556333]" name="runScenario" duration-ms="4644" started-at="2022-10-19T10:18:04 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-19T10:18:08 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login should be success"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Bookcart Application tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunner.Runner@2a556333]" name="tearDownClass" is-config="true" duration-ms="131" started-at="2022-10-19T10:18:08 IST" finished-at="2022-10-19T10:18:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.Runner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
